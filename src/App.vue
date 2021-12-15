@@ -1,16 +1,21 @@
 <template>
-  <v-app>
+  <v-app style="padding: 0 !important; margin: 0 !important;">
     <v-main  class="overflow-hidden">
           <Navbar/>
-          <v-sheet
+          <v-sheet style="padding: 0 !important; margin: 0 !important; background-color: rgb(229, 224, 255);"
               id="scrolling-techniques-7"
               class="overflow-y-auto"
               max-height="100vh"
           >
             <Home/>
-            <v-divider/>
 
-            <Home/>
+            <div style="height: 140vh;
+            margin-top: 12px;
+            border-bottom-left-radius: 45%;
+            border-bottom-right-radius: 45%;
+            background-color:  white"></div>
+
+            <div style="height: 100vh; background-color: rgb(229, 224, 255)"></div>
             <v-divider/>
 
             <Footer/>
