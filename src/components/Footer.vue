@@ -1,27 +1,20 @@
 <template>
   <v-footer
       color="white"
-      padless
-  >
+      padless>
     <v-row
         justify="center"
         no-gutters
     >
-      <v-btn
+      <v-icon
           v-for="link in links"
           :key="link"
           color="black"
           text
-          rounded
-          class="my-2"
-      >
-        {{ link }}
-      </v-btn>
-      <v-col
-          class="py-4 text-center text--darken-1"
-          cols="12"
-      >
-        {{ new Date().getFullYear() }} — <strong>EmpreendApp</strong>
+          class="my-2">
+      </v-icon>
+      <v-col class="py-4 text-center text--darken-1" cols="12">
+        <strong><span class="mr-1">©</span>EmpreendApp</strong> — O futuro é de quem o antecipa.
       </v-col>
     </v-row>
   </v-footer>

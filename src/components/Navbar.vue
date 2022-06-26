@@ -3,45 +3,28 @@
       absolute
       color="white"
       elevate-on-scroll
-      scroll-target="#scrolling-techniques-7"
-  >
-
-<!--    <v-app-bar-nav-icon></v-app-bar-nav-icon>-->
-
-    <v-img
-        :src="require('../assets/slogan.png')"
-        class="my-3"
-        contain
-        height="60"
-        width="60"
-    />
+      scroll-target="#scrolling-techniques-7">
+    <div>
+      <v-img :src="require('../assets/slogan.png')"
+             class="pa-0"
+             style="width: 180px; left: 0;"
+             contain/>
+    </div>
     <v-row
         justify="center"
-        no-gutters
-    >
+        no-gutters>
       <v-btn
           v-for="link in nav_itens"
           :key="link"
-          color="black"
+          :style="{ fontSize: 10 + 'pt' }"
+          color="#8A6FFA"
           text
-          rounded
-          class="my-2"
-      >
+          class="my-2">
         {{ link }}
       </v-btn>
     </v-row>
 
-    <v-btn icon>
-      <v-icon>mdi-magnify</v-icon>
-    </v-btn>
-
-    <v-btn icon>
-      <v-icon>mdi-heart</v-icon>
-    </v-btn>
-
-    <v-btn icon>
-      <v-icon>mdi-dots-vertical</v-icon>
-    </v-btn>
+    <v-app-bar-nav-icon class="mr-1"></v-app-bar-nav-icon>
   </v-app-bar>
 </template>
 
@@ -51,12 +34,12 @@ export default {
 
   data: () => ({
     nav_itens: [
-      'Home',
-      'About Us',
-      'Team',
-      'Services',
-      'Blog',
-      'Contact Us',
+      'Início',
+      'Sobre Nós',
+      'Serviços',
+      'Orçamento',
+      'Time',
+      'Contatos',
     ],
   }),
 }
