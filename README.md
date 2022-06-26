@@ -5,6 +5,21 @@
 npm install
 ```
 
+## Project clean
+```
+npm ci
+```
+
+## Project dependences upgrade
+```
+npm update -g
+```
+
+## Project dependences upgrade
+```
+npm install npm@latest -g
+```
+
 ### Compiles and hot-reloads for development
 ```
 npm run serve
