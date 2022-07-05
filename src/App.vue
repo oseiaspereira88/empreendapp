@@ -1,23 +1,9 @@
 <template>
-  <v-app style="padding: 0 !important; margin: 0 !important;">
-    <v-main class="overflow-hidden">
+  <v-app>
+    <v-main>
       <Navbar/>
-      <v-sheet style="padding: 0 !important; margin: 0 !important;"
-               id="scrolling-techniques-7"
-               class="overflow-y-auto"
-               max-height="100vh">
-        <br><br>
-        <CardHome/>
-
-        <div style="height: 140vh;
-            margin-top: 12px;
-            border-bottom-left-radius: 45%;
-            border-bottom-right-radius: 45%;
-            background-color:  white"></div>
-
-        <div style="height: 100vh; background-color: rgb(229, 224, 255)"></div>
-        <v-divider/>
-
+      <v-sheet id="scrolling-techniques-7" max-height="100vh"><br><br>
+        <router-view/>
         <Footer/>
       </v-sheet>
     </v-main>
@@ -25,17 +11,67 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar';
-import CardHome from './components/CardHome';
-import Footer from './components/Footer';
+import Navbar from '@/components/Navbar.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
-
   components: {
     Navbar,
-    CardHome,
-    Footer,
-  },
-};
+    Footer
+  }
+}
 </script>
+
+<style lang="scss">
+.scroll-none::-webkit-scrollbar {
+  display: none;
+}
+
+.bg-right-container {
+  position: absolute;
+  top: 0%;
+  right: 0px;
+  z-index: 0;
+  height: 100%;
+  width: auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.bg-left-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  width: auto;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.bg-right-container .bg, .bg-left-container .bg {
+  height: 100%;
+}
+
+//#app {
+//  font-family: Avenir, Helvetica, Arial, sans-serif;
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//  text-align: center;
+//  color: #2c3e50;
+//}
+//
+//nav {
+//  padding: 30px;
+//
+//  a {
+//    font-weight: bold;
+//    color: #2c3e50;
+//
+//    &.router-link-exact-active {
+//      color: #42b983;
+//    }
+//  }
+//}
+</style>

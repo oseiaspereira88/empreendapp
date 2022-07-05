@@ -10,13 +10,13 @@ npm install
 npm ci
 ```
 
-## Project dependences upgrade
 ```
-npm update -g
+npm install vue-router@2.0.0
 ```
 
 ## Project dependences upgrade
 ```
+npm update -g
 npm install npm@latest -g
 ```
 

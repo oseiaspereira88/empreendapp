@@ -1,30 +1,35 @@
 <template>
   <v-app-bar
       absolute
+      style="z-index: 2"
       color="white"
       elevate-on-scroll
       scroll-target="#scrolling-techniques-7">
     <div>
-      <v-img :src="require('../assets/slogan.png')"
-             class="pa-0"
-             style="width: 180px; left: 0;"
-             contain/>
+      <a onclick="window.location = '/'">
+        <v-img :src="require('../assets/slogan.png')"
+               class="pa-0"
+               style="width: 180px; left: 0;"
+               contain/>
+      </a>
+
     </div>
     <v-row
         justify="center"
         no-gutters>
-      <v-btn
-          v-for="link in nav_itens"
-          :key="link"
-          :style="{ fontSize: 10 + 'pt' }"
-          color="#8A6FFA"
-          text
-          class="my-2">
-        {{ link }}
-      </v-btn>
+      <div v-for="link in nav_itens" :key="link" :style="{ fontSize: 10 + 'pt' }">
+
+        <v-btn v-if="link == 'Início'" color="#8A6FFA" text class="mx-1 my-2 v-btn--active">
+          {{ link }}
+        </v-btn>
+        <v-btn v-else color="#8A6FFA" text class="mx-1 my-2">
+          {{ link }}
+        </v-btn>
+
+      </div>
     </v-row>
 
-    <v-app-bar-nav-icon class="mr-1"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon class="mr-1" color="#514EED"></v-app-bar-nav-icon>
   </v-app-bar>
 </template>
 
