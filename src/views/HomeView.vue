@@ -1,10 +1,15 @@
 <template>
   <div class="home">
     <Section1/>
+    <v-divider/>
     <Section2/>
+    <v-divider/>
     <Section3/>
+    <v-divider/>
     <Section4/>
+    <v-divider/>
     <Section5/>
+    <v-divider/>
     <Section6/>
   </div>
 </template>

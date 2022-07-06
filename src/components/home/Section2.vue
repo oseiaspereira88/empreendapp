@@ -1,5 +1,5 @@
 <template>
-  <v-container class="section py-16">
+  <v-container class="section py-16" style="background:  linear-gradient(90deg, #20107F 0%, #3814DD 50%, #3e15f5 65%);">
     <div class="d-flex justify-center">
       <div class="flex-1 py-16">
         <div style="height:100%; width:auto; overflow: hidden">
