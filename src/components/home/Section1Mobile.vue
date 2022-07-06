@@ -4,7 +4,7 @@
 
     <div class="text-center pt-6" style="padding-left: 10vw; padding-right: 10vw;">
       <lottie-animation id="animation1"
-                        class="mt-10"
+                        class="mt-16 pt-4"
                         ref="anim"
                         :animationData="require('@/assets/anim/programming-computer.json')"
                         :loop="true"
