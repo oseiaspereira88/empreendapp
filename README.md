@@ -14,6 +14,10 @@ npm ci
 npm install vue-router@2.0.0 --location=global
 ```
 
+```
+npm install -S vue-mobile-detection
+```
+
 ## Project dependences upgrade
 ```
 npm update -g

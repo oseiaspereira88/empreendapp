@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <v-main>
-      <Navbar/>
+      <GeneralNavbar/>
       <v-sheet id="scrolling-techniques-7" max-height="100vh"><br><br>
         <router-view/>
         <Footer/>
@@ -11,15 +11,15 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar.vue'
+import GeneralNavbar from '@/components/GeneralNavbar.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    Navbar,
+    GeneralNavbar,
     Footer
-  }
+  },
 }
 </script>
 

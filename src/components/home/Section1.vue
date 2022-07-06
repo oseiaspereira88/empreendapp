@@ -61,7 +61,7 @@ export default {
     },
     enterFrame() {
       console.log('enterFrame')
-    }
+    },
   }
 }
 </script>
