@@ -10,9 +10,7 @@
                  style="width: 180px; left: 0;"
                  contain/></a>
       </div>
-      <v-row
-          justify="center"
-          no-gutters>
+      <v-row justify="center" no-gutters>
         <div v-for="link in nav_itens" :key="link" :style="{ fontSize: 10 + 'pt' }">
 
           <v-btn v-if="link == 'Início'" color="#a3a3FF" text class="mx-1 my-2 v-btn--active">
