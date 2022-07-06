@@ -56,7 +56,7 @@ export default {
   },
   methods: {
     handleView() {
-      this.isMobile = window.innerWidth <= 880;
+      this.isMobile = window.innerWidth <= 998;
     },
   },
   created() {

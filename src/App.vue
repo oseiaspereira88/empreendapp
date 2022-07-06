@@ -31,7 +31,7 @@ export default {
 .bg-right-container {
   position: absolute;
   top: 24vh;
-  right: 60px;
+  right: 0;
   z-index: 0;
   height: 100%;
   width: auto;

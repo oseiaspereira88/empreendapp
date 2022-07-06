@@ -11,14 +11,14 @@
                           :speed="10"/>
       </div>
       <v-row class="text-center" style="padding-left: 10vw; padding-right: 10vw;">
-        <v-col cols="12" style="height: 21vh"></v-col>
+        <v-col cols="12" style="height: 24vh"></v-col>
         <v-col cols="8">
           <div style="padding-right: 180px;">
-            <v-row>
-              <v-col cols="1">
-                <div class="py-4 px-4" style="background: #957cfd; border-radius: 100%"> <strong></strong> </div>
-              </v-col>
-              <v-col>
+            <v-row style="position:relative;">
+              <div style="width: 3vw; position:absolute; top: -1.8vw; left: -2.6vw">
+                <div style="background: #957cfd; border-radius: 100%; padding: 3vw;"><strong></strong></div>
+              </div>
+              <v-col style=" z-index: 1;">
                 <h1 class="white--text" style="font-size: 42px; text-align: left;">
                   Nossa Software House
                 </h1>
