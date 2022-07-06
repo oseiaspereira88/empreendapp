@@ -11,7 +11,7 @@ npm ci
 ```
 
 ```
-npm install vue-router@2.0.0
+npm install vue-router@2.0.0 --location=global
 ```
 
 ## Project dependences upgrade

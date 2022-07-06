@@ -30,8 +30,8 @@ export default {
 
 .bg-right-container {
   position: absolute;
-  top: 0%;
-  right: 0px;
+  top: 24vh;
+  right: 60px;
   z-index: 0;
   height: 100%;
   width: auto;
@@ -50,8 +50,12 @@ export default {
   overflow: hidden;
 }
 
+.bg-right-container #animation1{
+  height: 70%;
+}
+
 .bg-right-container .bg, .bg-left-container .bg {
-  height: 100%;
+
 }
 
 //#app {

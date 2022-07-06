@@ -10,8 +10,10 @@
   "dependencies": {
     "assets": "^3.0.1",
     "core-js": "^3.6.5",
+    "lottie-web-vue": "^1.2.1",
     "vue": "^2.6.11",
     "vue-lazy-transition": "^0.5.3",
+    "vue-lottie": "^0.2.1",
     "vue-router": "^3.5.1",
     "vuetify": "^2.4.0"
   },

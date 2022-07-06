@@ -15,7 +15,6 @@
   </v-container>
 </template>
 
-
 <style lang="scss">
 
 .section {
