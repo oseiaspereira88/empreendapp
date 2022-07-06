@@ -17,7 +17,7 @@
         Pode usar toda a criatividade do mundo, só para tirar sua ideia do papel
       </p>
       <div style="width: 100%;">
-        <v-btn dark class="pt-1" rounded color="rgb(22,8,49)" style="width: 100%;">Solicite Orçamento</v-btn>
+        <v-btn dark class="pt-1" rounded style="width: 100%; background: linear-gradient(-395deg, rgb(99,76,243), rgb(130,46,255))">Solicite Orçamento</v-btn>
       </div>
       <div class="py-16"><br><br></div>
     </div>
