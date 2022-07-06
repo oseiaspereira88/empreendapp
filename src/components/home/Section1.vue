@@ -15,8 +15,8 @@
         <v-col cols="8">
           <div style="padding-right: 180px;">
             <v-row>
-              <v-col cols="1 px-5">
-                <div class="py-4" style="background: #957cfd; border-radius: 100%"> <strong></strong> </div>
+              <v-col cols="1">
+                <div class="py-4 px-4" style="background: #957cfd; border-radius: 100%"> <strong></strong> </div>
               </v-col>
               <v-col>
                 <h1 class="white--text" style="font-size: 42px; text-align: left;">

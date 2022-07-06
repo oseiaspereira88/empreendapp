@@ -8,7 +8,7 @@
       </div>
       <div class="flex-2">
         <div>
-          <h3>Você está cansado assim como eu? </h3>
+          The case to my friend and HTML elements represent six levels of section headings. This is the highest section level and device is the lowest
         </div>
       </div>
     </div>
