@@ -26,7 +26,9 @@
                   Pode usar toda a criatividade do mundo, só para tirar sua ideia do papel
                 </p>
                 <div style="width: 78%;">
-                  <v-btn dark class="pt-1" rounded color="rgb(22,8,49)" style="width: 100%;">Solicite Orçamento</v-btn>
+                  <v-btn @click="abrirWhatsApp" dark class="pt-1" rounded color="rgb(22,8,49)" style="width: 100%;">
+                    Solicite Orçamento
+                  </v-btn>
                 </div>
               </v-col>
             </v-row>
@@ -62,6 +64,12 @@ export default {
     enterFrame() {
       console.log('enterFrame')
     },
+    openWhatsApp() {
+      const num = "INSIRA_AQUI_SEU_NUMERO_DE_TELEFONE";
+      const msg = "Olá! Estou entrando em contato a partir do seu site e quero fazer um orçamento.";
+      const url = `https://wa.me/${num}?text=${encodeURIComponent(msg)}`;
+      window.open(url, '_blank');
+    }
   }
 }
 </script>
